@@ -14,7 +14,7 @@ public class CsvDemo {
 
     public static void main(String[] args) throws Exception {
         // 0.获取csv文件的路径，注意获取到文件所在上层路径就可以了
-        String path = "/Users/kunni/IdeaProjects/calcite_learning/src/main/resources";
+        String path = "src/main/resources";
 
         // 1.构建CsvSchema对象，在Calcite中，不同数据源对应不同Schema，比如CsvSchema、DruidSchema、ElasticsearchSchema等
         CsvSchema csvSchema = new CsvSchema(new File(path), CsvTable.Flavor.SCANNABLE);
